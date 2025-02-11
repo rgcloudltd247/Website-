@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-shadow: 3px 3px 5px rgba(0, 255, 0, 0.6);
+        }
+
+        .store-item {
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            display: inline-block;
+            width: 90%;
+        }
+
+        .store-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        .glowing {
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #4CAF50, 0 0 10px #4CAF50;
+            }
+            to {
+                text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glowing">Minecraft Server Store</h1>
+        <p>Support the Hosting By Purchased Server </p>
+
+        <div class="store-item">
+            <h2>‎〢「𝗕𝗿𝗼𝗻𝘇𝗲」𝗣𝗹𝗮𝗻 ‎ </h2>
+            <p>4 GB RAM<br> 
+            100% CPU<br>
+            50 GB DISK<br>
+            1 BACKUP<br>
+            <br>
+            ₹ 99rs/mon</p>
+            <form action="https://discord.gg/MrkbpYzc5d" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="your-paypal-email@example.com">
+                <input type="hidden" name="item_name" value="VIP Rank">
+                <input type="hidden" name="amount" value="5.00">
+                <input type="hidden" name="currency_code" value="USD">
+                <button type="submit">Buy Now</button>
+            </form>
+        </div>
+
+        <div class="store-item">
+            <h2>Diamond Kit - $10</h2>
+            <p>Full diamond armor and tools!</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="your-paypal-email@example.com">
+                <input type="hidden" name="item_name" value="Diamond Kit">
+                <input type="hidden" name="amount" value="10.00">
+                <input type="hidden" name="currency_code" value="USD">
+                <button type="submit">Buy Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
